@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,900&family=Lato:ital,wght@1,900&display=swap');
+   body {
+    background: linear-gradient(270deg, rgb(48,14,63),rgb(189,35,51),rgb(241,207,178));
+  color:white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+    
+}
+
+.heading{
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 3px;
+  color: rgb(255, 208, 0);
+  text-align: center;
+  padding: 1px;
+  border-radius: 20px;
+  text-shadow: 5px 5px 10px #464646, 3px 0px 10px #ffffff;
+}
+#searchContent{
+  border-radius: 3px;
+  border: none;
+  padding:2px;
+  outline: none;
+  font-size: 6px;
+  width:85%;
+  align-items: center;
+  margin-left: 6.5%;
+  font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column; 
+}
+
+.flex>p{
+  text-align: center;
+  align-content: center;
+  font-size: 28px;
+  color:rgb(248, 250, 250);
+  font-weight: bolder;
+  margin: 0px;
+  margin-top:10px;
+}
+
+.image{
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+  transition: transform 0.5s;
+  box-shadow: 0px 0px 20px 2px #aaeef7;
+}
+img:hover{
+ transform: scale(1.1); 
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+ .header{
+    font-size: 20px;
+ }
+ .flex>img{
+    width: 95%;
+    height: 250px;
+    margin: 10px;
+  }
+  
+}
+
+::-webkit-scrollbar{
+  width: 1%;
+}
+</style>
+<script>
+  function searchSong(){
+    var filter = document.getElementById("searchContent").value.toLowerCase();
+    var flexCon = document.querySelectorAll('.flex');
+    for(i=0;i<flexCon.length;i++)
+    {
+      var x = document.getElementsByClassName("flex")[i].className;
+      if(x.toLowerCase().indexOf(filter) > -1){
+        document.getElementsByClassName("flex")[i].style.display="";
+      }
+      else
+      {
+        document.getElementsByClassName("flex")[i].style.display="none";
+      }
+    }
+  }   
+</script>
+    <head>
+        
+        <title>Telugu Songs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="heading">
+        <h1>TELUGU SONGS</h1>
+           </div>
+           <div>  
+            <input type="text" id="searchContent" placeholder=" Search for Music...🎵 " onkeyup="searchSong()" />
+       </div>                     
+  <div class="container">
+          <div class="flex Fidda">
+          <p>FIDDA</p>
+          <a href="fidaa.html"> 
+          <img src="https://cdn.123telugu.com/content/wp-content/uploads/2017/07/fidaa-m1.jpg" class="image"/></a>
+          </div>
+
+          <div class="flex Ala-Vaikuntapuramlo">
+          <p>Ala-Vaikuntapuramlo</p>
+          <a href="Ala Vaikunthapurramuloo.html"> 
+          <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://naasongs.fm/wp-content/uploads/2019/11/Ala-Vaikuntapuramlo.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex Rangde"> 
+          <p>Rangde</p>
+          <a href="Rang De.html">
+          <img src="https://static.toiimg.com/photo/80073181.jpeg" class="image"/></a>
+          </div>
+
+          <div class="flex Love-Story"> 
+          <p>Love-Story</p>   
+          <a href="Love Story.html">
+          <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://naasongs.fm/wp-content/uploads/2020/01/Love-Story.jpg" class="image"/></a>
+          </div>
+
+          <div class="flex Uppena"> 
+          <p>Uppena</p>  
+          <a href="uppena.html">
+          <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://naasongs.fm/wp-content/uploads/2020/01/Uppena.jpg" class="image"/></a>
+          </div>
+
+          <div class="flex Maharshi"> 
+          <p>Maharshi</p>  
+          <a href="Maharshi.html">
+          <img src="https://naasongs.co/wp-content/uploads/2018/08/Maharshi-2018-FM.jpg" class="image" /></a>
+          </div>
+
+          <div class="flex Majili"> 
+          <p>Majili</p>
+          <a href="Majili.html">
+          <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://naasongs.fm/wp-content/uploads/2019/11/Majili.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex h-baby"> 
+          <p>oh-baby</p>
+          <a href="Oh Baby.html">
+          <img src="https://naasongs.co/wp-content/uploads/2019/06/Oh-Baby-Telugu-2019-250x250.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex gang leader"> 
+          <p>Gang Leader</p>
+          <a href="Gang Leader.html">
+          <img src="https://www.sify.com/uploads/gang-leader-review-tjnoXXgcdegeh.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex RRR"> 
+          <p>RRR</p>
+          <a href="RRR.html">
+          <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/rrr-et00094579-27-07-2021-11-33-17.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex CHALO"> 
+          <p>CHALO</p> 
+          <a href="chalo.html">
+          <img src="https://a10.gaanacdn.com/images/albums/93/2037193/crop_480x480_1516882641_2037193.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex DJ"> 
+          <p>DJ</p>
+          <a href="DJ.html">
+          <img src="https://www.filmibeat.com/img/popcorn/movie_posters/dj---duvvada-jagannadham-20170220110857-15298.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex geetha govindam"> 
+          <p>Geetha Govindam</p>
+          <a href="Geetha Govindam.html">
+          <img src="https://m.media-amazon.com/images/M/MV5BOTE1ZDA3NDEtMDZlNS00MjlkLWFmNzAtYzVmYWJmMzEwMDVlXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" class="image" /></a> 
+          </div>
+
+          <div class="flex mirchi"> 
+          <p>Mirchi</p>
+          <a href="Mirchi.html">
+          <img src="https://www.filmibeat.com/img/popcorn/movie_posters/mirchi-11045.jpg" class="image" /></a> 
+          </div>   
+          
+          <div class="flex om namo venkateshaya"> 
+            <p>Om Namo Venkateshaya</p>
+            <a href="om namo venkateshaya.html">
+            <img src="https://pbs.twimg.com/profile_images/830670745705410560/ibW7xuhw_400x400.jpg" class="image" /></a> 
+            </div>   
+    
+</div>     
+    
+    </body>
+</html>                
+
